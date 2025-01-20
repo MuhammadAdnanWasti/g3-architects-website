@@ -28,6 +28,7 @@
   }
   .head{
     padding: 1rem;
+    width: 100%;
     background-color: rgba(255, 144, 14, 0.1);
   }
   .banner{
@@ -39,6 +40,10 @@ font-weight: 700;
 
 
 text-align: center;
+  }
+  #banner1-p1{
+    width: 45%;
+    text-align: center;
   }
   .banner1{
     margin-top: 5rem;
@@ -83,6 +88,9 @@ text-align: center;
   align-items: center;
   gap: 3.5rem;
 }
+#second-p1{
+  width: 80%;
+}
 .images{
   width: 50vw;
    display: grid;
@@ -102,6 +110,7 @@ text-align: center;
   .ccc{
     font-size: 2.1rem;
   }
+ 
   .con2{
     display: flex;
     flex-direction: column;
@@ -118,7 +127,7 @@ text-align: center;
   .card{
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 5rem;
     
     border: 1px solid rgb(248, 133, 1);
     border-radius: 2rem;
@@ -147,6 +156,80 @@ text-align: center;
     max-width: 340px;
     margin: 0 auto ;
     text-align: center;
+  }
+  /* third */
+  .third{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+  }
+  #third-h1{
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 17px;
+   
+  }
+.con7{
+  width: 50%;
+  padding-left: 9vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+ .con7 .cards{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.con7 .card{
+  border-radius: 8px;
+border: none;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+background: rgb(255, 255, 255);
+
+}
+.con7 #third-p1{
+  width: 75%;
+}
+.architect{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+}
+
+.architect img{
+  width: 100%;
+}
+.ccc1{
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+.btn1{
+  width: 11rem;
+  height: 6rem;
+  border-radius: 4px;
+  
+  background: rgb(255, 144, 14);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.btn1:hover{
+  background-color: rgb(248, 133, 1);
+}
+  .con7 h3{
+    color: rgb(19, 19, 19);
+    
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0%;
+    text-align: left;
   }
   /* utility */
   .dark-2{
@@ -182,13 +265,16 @@ cursor: pointer;
   }
 
 
-  @media screen and (max-width:576px){
+  @media screen and (max-width:676px){
 
-    .navbar1 , .navbar1 ul, .second{
+    .navbar1 , .navbar1 ul, .second, .third{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 1rem;
+    }
+    .con7 , .architect, .con7 .cards{
+      width: 100%;
     }
     .im{
       flex-direction: column;
@@ -204,12 +290,15 @@ cursor: pointer;
     }
     
   }
-  @media  screen and (min-width:577px) and (max-width:992px) {
+  @media  screen and (min-width:677px) and (max-width:1111px) {
      .second {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 1rem;
+  }
+  .con7 , .architect, .con7 .cards{
+    width: 100%;
   }
   .im{
     flex-direction: column;
